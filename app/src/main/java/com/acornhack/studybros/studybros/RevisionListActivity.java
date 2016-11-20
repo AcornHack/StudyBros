@@ -9,15 +9,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-public class GameListActivity extends Activity {
-    String[] worldArray = {"Maths World", "Physics World", "Chemistry World", "Biology World"};
+public class RevisionListActivity extends Activity {
+    String[] subjectArray = {"Maths Notes", "Physics Notes", "Chemistry Notes", "Biology Notes"};
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch);
 
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
-                R.layout.activity_game_list, R.id.label, worldArray);
+                R.layout.activity_game_list, R.id.label, subjectArray);
 
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
