@@ -10,7 +10,8 @@ public class LaunchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch);
 
-        Intent myIntent = new Intent(this, GameListActivity.class);
+        Intent myIntent = new Intent(this, MainActivity.class);
         startActivity(myIntent);
+        finish();
     }
 }
